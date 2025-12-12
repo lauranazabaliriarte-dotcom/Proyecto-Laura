@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caza del tesoro</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+
+  <form id="formNombre" onsubmit="return false;">
+    <label for="nombre">Nombre:</label>
+    <input id="nombre" name="nombre" type="text" autocomplete="off" />
+
+    <button id="btnIntroducir" type="button">Introducir nombre</button>
+    <button id="btnJugar" type="button" disabled>Jugar</button>
+  </form>
+
+  <div id="saludo" aria-live="polite" style="margin-top:.5rem;"></div>
+  <div id="aviso" aria-live="polite" style="color:#c00;margin-top:.5rem;"></div>
+
+  <div id="tablero" aria-live="polite"></div>
+
+  <button id="tirarDado" type="button" style="display:none; margin-top:.5rem;">Tirar dado</button>
+
+  
+  <img id="imgDado" src="img/dado1.png" alt="Dado" style="display:none; margin-top:.5rem; width:80px; height:auto;" />
+
+  <script src="formulario.js"></script>
+</body>
+</html>

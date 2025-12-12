@@ -1,0 +1,10 @@
+
+#tablero table { border-collapse: collapse; margin-top:1rem; }
+#tablero td { width:32px; height:32px; border:1px solid #ccc; text-align:center; vertical-align:middle; }
+#tablero td.hero { background:#def; font-weight:700; }
+#tablero td.cofre { background:#fed; font-weight:700; }
+.movimiento-posible {
+    background-color: #e31818; 
+    cursor: pointer;          
+    border: 3px solid red !important; 
+}
